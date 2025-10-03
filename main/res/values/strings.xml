@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ayyathunai</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="registration" tools:keep="@string/registration">Registration</string>
+    <string name="confirm_password" tools:keep="@string/confirm_password">confirm password</string>
+    <string name="address" tools:keep="@string/address">address</string>
+    <string name="checkbox" tools:keep="@string/checkbox">CheckBox</string>
+    <string name="submit" tools:keep="@string/submit">submit</string>
+    <string name="signup">signup</string>
+    <string name="signin">signin</string>
+    <string name="welcome">WELCOME</string>
+</resources>

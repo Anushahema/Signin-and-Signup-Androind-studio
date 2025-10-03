@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/registration"
+            android:textSize="36sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/usr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="58dp"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="61dp" />
+
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/usr"
+            android:layout_marginTop="102dp"
+            android:contentDescription="@string/password"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:layout_alignLeft="@+id/usr"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/phno."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/usr"
+            android:layout_below="@+id/cpwd"
+            android:ems="10"
+            android:hint="@android:string/emptyPhoneNumber"
+            android:inputType="phone"
+            android:layout_alignLeft="@+id/usr" />
+
+        <EditText
+            android:id="@+id/cpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/usr"
+            android:layout_below="@+id/pwd"
+            android:contentDescription="@string/password"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:typeface="normal"
+            android:layout_alignLeft="@+id/usr"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/usr"
+            android:layout_alignStart="@+id/usr"
+            android:layout_below="@+id/phno."
+            android:ems="10"
+            android:hint="@string/address"
+            android:inputType="textPostalAddress" />
+
+        <CheckBox
+            android:id="@+id/agree"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="107dp"
+            android:text="@string/checkbox"
+            android:textSize="18sp"
+            tools:text="yes ,i agree this can be viewed by owner(for delivary purpose without password)" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="43dp"
+            android:text="@string/submit"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="43dp" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/submit"
+            android:layout_marginEnd="102dp"
+            android:layout_marginRight="102dp"
+            android:text="@android:string/cancel"
+            tools:ignore="ButtonOrder,RelativeOverlap" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
